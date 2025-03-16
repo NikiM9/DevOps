@@ -1,1 +1,1 @@
-# OMSSTUB
+My first github action workflow.
