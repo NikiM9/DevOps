@@ -3,7 +3,6 @@ name: Terraform CI/CD
 on:
   push:
     branches: [ "main" ]
-  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -17,7 +16,7 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
       with:
-        terraform_version: 1.6.7
+        terraform_version: 1.6.6
 
     - name: Azure Login
       uses: azure/login@v2
